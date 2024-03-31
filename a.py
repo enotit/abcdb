@@ -3,7 +3,7 @@ import json
 
 def get_token():
     token = ''
-    with open('token.json') as file:
+    with open('token.jsons') as file:
         json_answer = json.load(file)
         token = json_answer['config']
     return token
