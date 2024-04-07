@@ -8,7 +8,7 @@ def get_token():
         token = json_answer['config']
     return token
 
-TOKEN = get_token() + '1'
+TOKEN = get_token()
 bot = telebot.TeleBot(TOKEN)
 @bot.message_handler(commands=['start'])
 def send_start(message):
